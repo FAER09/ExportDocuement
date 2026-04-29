@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Profile } from '../types';
+import type { Profile } from '../types';
 
 interface ProfileStore {
   profiles: Profile[];

@@ -1,7 +1,7 @@
 import { Download } from 'lucide-react';
 import { Button } from './ui/button';
 import { exportToJSON, exportToPDF } from '../services/exportService';
-import { Profile } from '../types';
+import type { Profile } from '../types';
 
 interface Props {
   profile: Profile;

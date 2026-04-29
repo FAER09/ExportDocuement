@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { Profile, ProfileFormValues } from '../types';
+import type { Profile, ProfileFormValues } from '../types';
 
 const requiredText = (label: string) =>
   z.string().trim().min(1, `El campo ${label} es obligatorio.`);

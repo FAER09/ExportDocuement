@@ -1,5 +1,5 @@
 import html2pdf from 'html2pdf.js';
-import { Profile } from '../types';
+import type { Profile } from '../types';
 
 export async function exportToPDF(elementId: string, filename = 'CV.pdf') {
   const element = document.getElementById(elementId);

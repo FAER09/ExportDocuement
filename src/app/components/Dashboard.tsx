@@ -1,6 +1,6 @@
 import { DocumentCards } from './layout/DocumentCards';
 import { ProfileAvatar } from './layout/ProfileAvatar';
-import { Profile } from '../types';
+import type { Profile } from '../types';
 
 interface DashboardProps {
   profile: Profile;

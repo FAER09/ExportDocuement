@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { X, Plus, Minus } from 'lucide-react';
 import { createProfileFromValues, profileFormSchema } from '../schemas/profile';
 import { useProfileStore } from '../store/profile-store';
-import { Education, Experience, ProfileFormValues } from '../types';
+import type { Education, Experience, ProfileFormValues } from '../types';
 
 const emptyExperience: Experience = {
   empresa: '',

@@ -11,7 +11,7 @@ import {
   SelectValue,
 } from '../components/ui/select';
 import { Separator } from '../components/ui/separator';
-import { Profile } from '../types';
+import type { Profile } from '../types';
 
 interface Props {
   profile: Profile;
