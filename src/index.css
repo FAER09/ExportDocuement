@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* ── Tema Nothing Phone mapeado a tokens de shadcn ── */
+:root {
+  /* shadcn espera variables en el formato hsl(H S% L%) sin la función hsl() */
+  --background:        0 0% 4%;      /* #0a0a0a */
+  --foreground:        0 0% 91%;     /* #e8e8e8 */
+
+  --card:              0 0% 7%;      /* #111111 */
+  --card-foreground:   0 0% 91%;
+
+  --popover:           0 0% 7%;
+  --popover-foreground:0 0% 91%;
+
+  --primary:           0 0% 100%;   /* blanco puro — acento Nothing Phone */
+  --primary-foreground:0 0% 4%;
+
+  --secondary:         0 0% 13%;    /* #222222 */
+  --secondary-foreground: 0 0% 91%;
+
+  --muted:             0 0% 13%;
+  --muted-foreground:  0 0% 33%;    /* #555555 */
+
+  --accent:            0 0% 13%;
+  --accent-foreground: 0 0% 91%;
+
+  --destructive:       0 62% 30%;
+  --destructive-foreground: 0 0% 91%;
+
+  --border:            0 0% 13%;    /* #222222 */
+  --input:             0 0% 13%;
+  --ring:              0 0% 100%;
+
+  --radius: 0.75rem;                /* bordes redondeados suaves */
+}
+
+/* ── Tokens personalizados (complementan shadcn para clases nt-* legibles) ── */
+@theme inline {
+  --color-nt-bg:      hsl(0 0% 4%);
+  --color-nt-surface: hsl(0 0% 7%);
+  --color-nt-border:  hsl(0 0% 13%);
+  --color-nt-muted:   hsl(0 0% 33%);
+  --color-nt-text:    hsl(0 0% 91%);
+  --color-nt-accent:  hsl(0 0% 100%);
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
