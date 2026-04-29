@@ -87,9 +87,9 @@ export function AboutUsModal({ onClose }: AboutUsModalProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.35 }}
             >
-              <h2 className="tracking-tight">Sobre nosotros</h2>
+              <h2 className="tracking-tight">CVEX - CV Exportation</h2>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Somos Fernando e Ivan. Creamos esta herramienta para guardar informacion de perfil
+                Somos Ramon Fernando e Ivan Alexandro. Creamos <strong>CVEX</strong> para guardar informacion de perfil
                 en un solo lugar y generar documentos profesionales de forma mas rapida.
               </p>
             </motion.div>
@@ -98,7 +98,7 @@ export function AboutUsModal({ onClose }: AboutUsModalProps) {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.16, duration: 0.35 }}
-              className="rounded-xl border border-border bg-muted/30 p-5"
+              className="rounded-xl border border-border bg-blue-50/30 dark:bg-blue-950/10 p-5"
             >
               <div className="mb-2 flex items-center gap-2">
                 <Code2 className="h-4 w-4 text-primary" />
@@ -106,13 +106,13 @@ export function AboutUsModal({ onClose }: AboutUsModalProps) {
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Simplificar la creacion de CV y cartas de presentacion para que el usuario se
-                enfoque en el contenido, no en repetir el mismo proceso cada vez.
+                enfoque en el contenido, no en repetir el mismo proceso cada vez con <strong>CV Exportation</strong>.
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              <DeveloperCard initial="F" name="Fernando" role="Desarrollador Full Stack" />
-              <DeveloperCard initial="I" name="Ivan" role="Desarrollador Full Stack" />
+              <DeveloperCard initial="E" name="Echavarria Contreras Ramon Fernando" role="Lic. en Sistemas Computacionales UABC" />
+              <DeveloperCard initial="L" name="Lopez Leon Ivan Alexandro" role="Lic. en Sistemas Computacionales UABC" />
             </div>
 
             <motion.div

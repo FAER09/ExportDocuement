@@ -35,23 +35,23 @@ export function AboutPage({ onBack }: Props) {
           volver
         </Button>
 
-        <h1 className="mb-1 text-3xl font-light tracking-[0.24em] text-foreground">cv generator</h1>
+        <h1 className="mb-1 text-3xl font-light tracking-[0.24em] text-foreground">CVEX - CV Exportation</h1>
         <p className="mb-8 text-sm text-muted-foreground">
           Crea y exporta CVs profesionales en PDF y JSON.
         </p>
 
         <p className="mb-3 text-xs uppercase tracking-[0.24em] text-muted-foreground">Equipo</p>
         <div className="mb-8 grid grid-cols-1 gap-3 md:grid-cols-2">
-          <Card>
+          <Card className="bg-blue-50/50 dark:bg-blue-950/10">
             <CardContent className="pt-4">
-              <p className="text-sm font-medium text-foreground">Persona 1</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">Formulario, datos y validación</p>
+              <p className="text-sm font-medium text-foreground">Echavarria Contreras Ramon Fernando</p>
+              <p className="mt-0.5 text-xs text-muted-foreground">Lic. en Sistemas Computacionales UABC</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-purple-50/50 dark:bg-purple-950/10">
             <CardContent className="pt-4">
-              <p className="text-sm font-medium text-foreground">Persona 2</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">UI, templates y exportación</p>
+              <p className="text-sm font-medium text-foreground">Lopez Leon Ivan Alexandro</p>
+              <p className="mt-0.5 text-xs text-muted-foreground">Lic. en Sistemas Computacionales UABC</p>
             </CardContent>
           </Card>
         </div>

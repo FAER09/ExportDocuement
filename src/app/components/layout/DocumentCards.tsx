@@ -24,13 +24,15 @@ const docs = [
 export function DocumentCards({ onSelect }: Props) {
   return (
     <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-      {docs.map((doc) => (
+      {docs.map((doc, index) => (
         <Card
           key={doc.id}
           onClick={() => onSelect(doc.id)}
           className={cn(
-            'cursor-pointer border-border/80 bg-card/80 transition-all duration-200',
-            'hover:border-primary hover:shadow-lg hover:shadow-black/5',
+            'cursor-pointer border-border/80 bg-card/80 transition-all duration-300',
+            index === 0 
+              ? 'hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1' 
+              : 'hover:border-purple-400 hover:shadow-xl hover:shadow-purple-500/5 hover:-translate-y-1',
             'focus-within:border-primary',
           )}
           tabIndex={0}
